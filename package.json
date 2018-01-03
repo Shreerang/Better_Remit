@@ -1,0 +1,37 @@
+{
+  "name": "express-react-starter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "currency-symbol-map": "^4.0.3",
+    "debug": "^2.6.9",
+    "emoji-flags": "^1.2.0",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "material-ui": "^0.19.4",
+    "morgan": "^1.9.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-router-dom": "^4.2.2",
+    "react-tap-event-plugin": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.14.3",
+    "react-scripts": "1.0.10",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
+    "build": "react-scripts build && mv build server",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001"
+}

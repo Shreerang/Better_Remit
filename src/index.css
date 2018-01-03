@@ -1,0 +1,152 @@
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body,
+#root,
+.br-container {
+  height: 100%;
+  margin: 0
+}
+
+.br-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: rgb(33, 150, 243);
+}
+
+.br-container .br-content {
+  flex: 1 1 auto;
+}
+
+.br-card{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+@media all and (max-width: 1000px){
+  .br-card{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+  }
+}
+
+.br-card > div{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+.br-card.br-selection-component > div{
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  width: 70%;
+  height: 90%;
+}
+
+.br_form_field{
+  margin: 10px auto;
+}
+
+.br-btn{
+  display: table;
+}
+
+.br-company-card{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  overflow: auto;
+}
+
+.br-company-card > div{
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  height: 97%;
+  margin: 2% 0;
+}
+
+.br-company-detail-card{
+  margin: 10px 0;
+}
+
+.br-company-detail-card img{
+  height: 10% !important;
+  width: 10% !important;
+  margin: 0 16px 0 0 !important;
+  border-radius: 0 !important;
+  background: none !important;
+  float: left !important;
+}
+
+@media all and (max-width: 1000px){
+  .br-company-detail-card img{
+    height: 15% !important;
+    width: 15% !important;
+  }
+}
+
+@media all and (max-width: 600px){
+  .br-company-detail-card img{
+    height: 25% !important;
+    width: 25% !important;
+  }
+}
+
+.br-company-logo-container{
+  display: flex;
+}
+
+.br-nocompany{
+  text-align: center;
+}
+
+.br-nocompany .br-sorry-emoji{
+  font-size: 4em;
+}
+
+.br-nocompany .br-error-msg{
+  font-size: 1.25em;
+}
+
+.br-quotes-cards-container{
+  padding: 1em 1em;
+}
+
+.br-quotes-card{
+  margin: 1em 0;
+}
+
+.br-quotes-card-img img{
+  width: 25%;
+}
+
+.br-quotes-card-desc{
+  padding: 10px 0;
+}
+
+.br-quotes-rate{
+  border: solid 1px rgb(33, 150, 243);
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 1.25em;
+  margin: 10px;
+}
+
+.br-quotes-rate span{
+  color: rgb(33, 150, 243);
+}

@@ -1,0 +1,17 @@
+.br-container .br-footer {
+  flex: 0 1 50px;
+  text-align: center;
+  height: 50px;
+  font-size: 10px;
+  background-color: rgb(33, 33, 33);
+  color: #FFF;
+  line-height: 25px;
+}
+
+.br-footer a{
+  color: #fff;
+}
+
+.br-footer #PoweredbyRemitRadar{
+  font-size: 8px;
+}

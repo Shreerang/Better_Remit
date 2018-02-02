@@ -11,6 +11,7 @@
     "jade": "^1.11.0"
   },
   "scripts": {
-    "start": "./server.js"
+    "start": "./server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   }
 }

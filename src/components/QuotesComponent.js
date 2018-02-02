@@ -56,7 +56,6 @@ class getQuotesDetails extends React.Component {
     let quoteRate = ''
     let quoteCards = []
     let companiesList = JSON.parse(localStorage.getItem('companyListLS'))
-    console.log(quoteList);
     quoteList.map((quote) => {
       companiesList.map((company) => {
         if(quote.CompanyId === company.ID){
@@ -78,8 +77,10 @@ class getQuotesDetails extends React.Component {
                   <br />
                   Remittance: <span>{currencyFromSym}{quote.AmountFrom} == {currencyToSym}{quote.AmountTo}</span>
                 </div>
-                <div>
-                  {(quote.Fee > 0) ? "A fee of " + currencyFeeSym + quote.Fee + " might be charged!" : "No transfer fee is charged!"}
+                <div className="br-quotes-card-alerts">
+                  <span role="img" aria-label="Warning Emoji">⚠️ </span>{(quote.Fee > 0) ? "A fee of " + currencyFeeSym + quote.Fee + " might be charged!" : "No transfer fee is charged!"}
+                  <br />
+                  <span role="img" aria-label="Delivery Time Emoji">⏰ </span>{(quote.TimeDeliveryFromCompanyToRecipient === 'Instant') ? "Transferred money might reach the recipient instantly!" : "Transfer might take " + quote.TimeDeliveryFromCompanyToRecipient}
                 </div>
               </CardText>
             </Card>

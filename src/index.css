@@ -128,15 +128,29 @@ body,
 }
 
 .br-quotes-card{
-  margin: 1em 0;
+  margin: 1em auto;
+  max-width: 55%;
+}
+
+@media all and (max-width: 600px){
+  .br-quotes-card{
+    max-width: 100%;
+  }
 }
 
 .br-quotes-card-img img{
   width: 25%;
 }
 
+@media all and (min-width: 1000px){
+  .br-quotes-card-img img{
+    width: 20%;
+  }
+}
+
 .br-quotes-card-desc{
   padding: 10px 0;
+  font-size: 1.15em;
 }
 
 .br-quotes-rate{
@@ -149,4 +163,8 @@ body,
 
 .br-quotes-rate span{
   color: rgb(33, 150, 243);
+}
+
+.br-quotes-card-alerts{
+  font-size: 1.25em;
 }

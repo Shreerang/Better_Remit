@@ -12,6 +12,9 @@
   },
   "scripts": {
     "start": "./server.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run build"
+  },
+  "engines": {
+    "node": "8.9.4"
   }
 }

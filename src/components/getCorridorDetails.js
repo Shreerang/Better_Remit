@@ -89,12 +89,6 @@ class getCorridorDetails extends React.Component{
     if(this.state.corridorDetails.length > 1){
       for(let item of this.state.corridorDetails){
         for(let q=0; q<item.CurrenciesFrom.length; q++){
-          console.log("======================")
-          console.log(item)
-          console.log(item.CurrenciesFrom[q])
-          console.log(item.CurrenciesFrom[q].Code)
-          console.log(item.CurrenciesFrom[q].AmountTo)
-          console.log("======================")
           if(item.CurrenciesFrom[q].AmountTo > 0){
             optionsList.push(
               <Card className="br-company-detail-card">

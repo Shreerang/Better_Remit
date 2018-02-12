@@ -17,25 +17,27 @@
     "jade": "^1.11.0",
     "material-ui": "^0.19.4",
     "morgan": "^1.9.0",
-    "nodemon": "^1.14.7",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.10",
-    "react-tap-event-plugin": "^3.0.2",
-    "webpack": "^3.10.0"
+    "react-tap-event-plugin": "^3.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^3.5.1",
-    "nodemon": "^1.14.7",
+    "nodemon": "^1.14.12",
     "react-scripts": "1.0.10",
-    "webpack": "^3.10.0"
+    "webpack": "^3.11.0"
+  },
+  "engines": {
+    "node": "8.9.3"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
+    "start": "NODE_ENV=production node ./server/build/index.html",
+    "start:dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
     "build": "react-scripts build && mv build server",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
